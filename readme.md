@@ -190,10 +190,10 @@ Jste v roli projektanta automatizačních systémů. Zákazník požaduje navrhn
 
 | Typ signálu | Požadavek linky | Celková kapacita navržené sestavy Teco | Rezerva (počet volných svorek) | Výsledná rezerva v % |
 | :--- | :--- | :--- | :--- | :--- |
-| **Digitální vstupy (DI)** | 23 | `...` | `...` | `... %` |
-| **Analogové vstupy (AI: 4–20mA, PT)**| 7 | `...` | `...` | `... %` |
-| **Tranzistorové výstupy (DO tranzistor + PWM)** | 6 (4 PWM + 2 DO)| `...` | `...` | `... %` |
-| **Reléové výstupy (DO relé 230 V)**| 3 | `...` | `...` | `... %` |
+| **Digitální vstupy (DI)** | 23 | `27 (7 na CPU + 20 v modulech)` | `4` | `14,8 % (blízko min. limitu 15–20 %)` |
+| **Analogové vstupy (AI: 4–20mA, PT)**| 7 | `8 (CPU CP-2007 disponuje 14 univerzálními, 7 osazeno)` | `1` | `14,3 %` |
+| **Tranzistorové výstupy (DO tranzistor + PWM)** | 6 (4 PWM + 2 DO)| `12 (modul OS-1401)` | `6` | `50,0 %` |
+| **Reléové výstupy (DO relé 230 V)**| 3 | `10 (CPU CP-2007)` | `7` | `70,0 %` |
 
 3. **Proudová bilance a dimenzování napájecího zdroje 24 V DC:**
    - Vypočtěte proudovou spotřebu sestavy na hladině 24 V DC:
