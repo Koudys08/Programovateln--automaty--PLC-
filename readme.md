@@ -50,9 +50,9 @@ Programovatelné automaty (PLC)
 | Zkratka      | Co zkratka znamená (anglicky / česky) | Pro jakou oblast řízení se primárně využívá                        | Typický operační / řídicí systém                 |
 | :----------- | :------------------------------------ | :----------------------------------------------------------------- | :----------------------------------------------- |
 | **iPC**      | Industrial PC / Průmyslové PC         | Vizualizace SCADA, řízení rozsáhlých technologických uzlů, SoftPLC | Průmyslový OS (Windows IoT Enterprise, Linux RT) |
-| **NC / CNC** | `...`                                 | `...`                                                              | `...`                                            |
-| **MCU**      | `...`                                 | `...`                                                              | `...` *(bare-metal bez OS nebo RTOS)*            |
-| **SoC**      | System on a chip                      | `...`                                                              | `...`                                            |
+| **NC / CNC** | `Numerical Control / Computer Numerical Control / Číselnicové / počítačové řízení` | `Přesné víceosé řízení obráběcích strojů (frézky, soustruhy, řezací lasery, roboty)` | `Specializovaný reálný časový OS (Real-Time OS) nebo proprietární deterministický firmware` |
+| **MCU**      | `Microcontroller Unit / Jednočipový mikrokontrolér` | `Jednoúčelové vestavěné řízení jednodušších zařízení, senzorů, pohonů, bílé techniky` | `lehký RTOS (FreeRTOS)`|
+| **SoC**      | System on a chip                      | `Vysoce integrovaná zařízení, IoT brány, edge computing, moderní inteligentní senzory`| `Embedded Linux, Android, RTOS`    |
 
 > :key: **Vysvětlení pojmů a odborné zdroje:**
 > - **PLC (Programmable Logic Controller):** Průmyslový mikropočítačový systém určený pro deterministické řízení technologických procesů v reálném čase. Vyznačuje se vysokou odolností proti rušení, modulární koncepcí a cyklickým vykonáváním programu.
