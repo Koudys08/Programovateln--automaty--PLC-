@@ -179,11 +179,11 @@ Jste v roli projektanta automatizačních systémů. Zákazník požaduje navrhn
 
 | Pozice | Typ modulu / komponenta                     | Přesné typové označení Teco           | Objednací číslo (Part No.) | Pokryté vstupy a výstupy (DI / DO / AI / PWM / relé) |
 | :----- | :------------------------------------------ | :------------------------------------ | :------------------------- | :--------------------------------------------------- |
-| **1**  | Spínaný napájecí zdroj 24 V DC na DIN lištu | `...` *(např. PS2-60/27)*             | `...`                      | Napájení centrály a senzorů 24 V DC                  |
-| **2**  | Centrální jednotka (CPU)                    | `...` *(např. CP-2007 nebo CP-2005)*  | `...`                      | `...`                                                |
-| **3**  | Rozšiřující modul 1 (sběrnice TCL2)         | `...` *(např. IB-1301)*               | `...`                      | `...`                                                |
-| **4**  | Rozšiřující modul 2 (sběrnice TCL2)         | `...` *(např. OS-1401)*               | `...`                      | `...`                                                |
-| **5**  | Případný další submodul / zakončení         | `...` *(např. zakončovací člen TCL2)* | `...`                      | `...`                                                |
+| **1**  | Spínaný napájecí zdroj 24 V DC | `Teco / Mean Well HDR-60-24 (příp. zálohovaný PS2-60/27)`| `8020103607 (pro HDR-60-24)` | Napájení centrály, modulů, snímačů a akčních členů 24 V DC |
+| **2**  | Centrální jednotka (CPU)                    | `Teco Tecomat CP-2007`| `Standardní kód Foxtrot 2`| `14× univerzální vstup (využito 7× AI: 5× 4–20 mA, 2× Pt1000; zbylých 7× jako DI), 10× reléový výstup`|
+| **3**  | Rozšiřující modul 1 (sběrnice TCL2)         | `Teco IB-1301`| `TXN 113 01`| `12× digitální vstup 24 V DC (DI)`|
+| **4**  | Rozšiřující modul 2 (sběrnice TCL2)         | `Teco OS-1401` | `TXN 114 01`| `12× tranzistorový výstup 24 V DC (z toho 4× rychlé/PWM do 2 A, 8× standardní do 0,5 A)` |
+| **5**  | Případný další submodul / zakončení         | `Zakončovací člen TCL2 (120 Ω)` | `TXN 102 90`  | `Impedanční zakončení komunikační linky TCL2` |
 
 2. **Vyhodnocení I/O bilance a projektové rezervy:**
    - Doplňte počty a vypočítejte výslednou rezervu pro budoucí rozšíření linky:
